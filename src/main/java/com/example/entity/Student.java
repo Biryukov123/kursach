@@ -7,8 +7,8 @@ import lombok.Data;
 @Data
 
 public class Student extends Person {
-    String group; // группа
-    Integer numberRecordBook; // номер зачетки
+    String group;
+    Integer numberRecordBook;
 
     public Student(Integer id, String surname, String name, Integer age, String group, Integer numberRecordBook) {
         super(id, surname, name, age);

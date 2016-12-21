@@ -12,10 +12,9 @@ public class PersonRepository {
     private HashMap<Integer, Person> persons = new HashMap<>();
 
     PersonRepository() {
-        personAdd(new Director(1, "Gibkin", "Yuriy", 22, 24, 4653, 6434));
+        personAdd(new Manager(1, "Gibkin", "Yuriy", 22, 24, 4653, 6434));
         personAdd(new Schoolkid(2, "Katomin", "Alexander", 23, 214.59, "11Б"));
         personAdd(new Teacher(3, "Petrov", "Sidor", 24, 15, 125, 2155));
-        personAdd(new Student(4, "Ivanov", "Ivan", 2234, "sdfsdf", 125234));
     }
 
     private Integer maxId() {

@@ -1,14 +1,14 @@
 package com.example.dto;
 
-import com.example.entity.Director;
+import com.example.entity.Manager;
 import lombok.Data;
 
 @Data
-public class DirectorDto extends CooperatorDto {
+public class ManagerDto extends CooperatorDto {
 
     Integer countSubordinates;//количество подчиненных
 
-    public PersonDto mapping(Director director) {
+    public PersonDto mapping(Manager director) {
         this.countSubordinates = director.getCountSubordinates();
         return this;
     }
