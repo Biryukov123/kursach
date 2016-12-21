@@ -8,7 +8,7 @@ public class TeacherDto extends CooperatorDto {
     Integer countHours; //количество часов
 
     public String toString() {
-        return super.toString() + "Кличество часов - " + countHours + "    \n";
+        return super.toString() + "Количество часов - " + countHours + "    \n";
     }
 
 }

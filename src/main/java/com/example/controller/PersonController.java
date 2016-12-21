@@ -10,8 +10,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/person1")
+@RequestMapping("/")
 public class PersonController {
+
 
     @Autowired
     @Qualifier(value = "personServiceImpl")
@@ -35,7 +36,7 @@ public class PersonController {
         return service.get(id).toString();
     }
 
-    @GetMapping(value = "/allperson")
+    @GetMapping(value = "/persons")
     public String readAll( ) {
 
         String s="";
