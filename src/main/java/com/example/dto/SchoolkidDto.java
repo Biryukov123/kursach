@@ -10,7 +10,7 @@ public class SchoolkidDto extends PersonDto {
     String classNumber;
 
     public PersonDto mapping(Schoolkid schoolkid) {
-        this.classNumber = schoolkid.getClassNumber();
+        this.classNumber = schoolkid.getNumber();
         return this;
     }
 

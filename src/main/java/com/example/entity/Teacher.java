@@ -9,11 +9,11 @@ import lombok.Data;
 
 public class Teacher extends Cooperator {
 
-    Integer countHours; //количество часов
+    Integer hours; //количество часов
 
-    public Teacher(Integer id, String surname, String name, Integer age, Integer experience, Integer salary, Integer countHours) {
+    public Teacher(Integer id, String surname, String name, Integer age, Integer experience, Integer salary, Integer hours) {
         super(id, surname, name, age, experience, salary);
-        this.countHours = countHours;
+        this.hours = hours;
     }
 
 
@@ -21,7 +21,7 @@ public class Teacher extends Cooperator {
     public PersonDto mapping() {
         TeacherDto teacherDto = new TeacherDto();
         super.map(this, teacherDto);
-        teacherDto.setCountHours(this.getCountHours());
+        teacherDto.setCountHours(this.getHours());
         return teacherDto;
     }
 }

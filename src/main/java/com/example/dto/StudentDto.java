@@ -10,7 +10,7 @@ public class StudentDto extends PersonDto {
 
 
     public String toString() {
-        return super.toString() + String.format("Группа - %s    Номер зачетки - %d    \n", group, numberRecordBook);
+        return super.toString() + String.format("Группа %s    Номер зачетки %d    \n", group, numberRecordBook);
     }
 
 

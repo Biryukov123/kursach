@@ -6,14 +6,9 @@ import lombok.Data;
 @Data
 public class ManagerDto extends CooperatorDto {
 
-    Integer countSubordinates;//количество подчиненных
-
-    public PersonDto mapping(Manager director) {
-        this.countSubordinates = director.getCountSubordinates();
-        return this;
-    }
+    Integer countSubordinates;
 
     public String toString() {
-        return super.toString() + String.format("Количество подчиненных - %d    \n", countSubordinates);
+        return super.toString() + String.format("Количество подчиненных %d    \n", countSubordinates);
     }
 }

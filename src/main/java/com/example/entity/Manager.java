@@ -7,18 +7,18 @@ import lombok.Data;
 @Data
 public class Manager extends Cooperator {
 
-    Integer countSubordinates;//количество подчиненных
+    Integer countCooperator;
 
-    public Manager(Integer id, String surname, String name, Integer age, Integer experience, Integer salary, Integer countSubordinates) {
+    public Manager(Integer id, String surname, String name, Integer age, Integer experience, Integer salary, Integer countCooperator) {
         super(id, surname, name, age, experience, salary);
-        this.countSubordinates = countSubordinates;
+        this.countCooperator = countCooperator;
     }
 
     @Override
     public PersonDto mapping() {
         ManagerDto directorDto = new ManagerDto();
         super.map(this, directorDto);
-        directorDto.setCountSubordinates(this.getCountSubordinates());
+        directorDto.setCountSubordinates(this.getCountCooperator());
         return directorDto;
     }
 }

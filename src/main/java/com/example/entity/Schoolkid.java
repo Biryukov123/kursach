@@ -8,13 +8,13 @@ import lombok.Data;
 
 public class Schoolkid extends Person {
 
-    String classNumber; // класс
+    String Number; // класс
     Double progress; // средняя успеваемость
 
     public Schoolkid(Integer id, String surname, String name, Integer age, Double progress, String classNumber) {
         super(id, surname, name, age);
         this.progress = progress;
-        this.classNumber = classNumber;
+        this.Number = classNumber;
     }
 
 
@@ -22,7 +22,7 @@ public class Schoolkid extends Person {
     public PersonDto mapping() {
         SchoolkidDto schoolkidDto = new SchoolkidDto();
         super.map(this, schoolkidDto);
-        schoolkidDto.setClassNumber(this.getClassNumber());
+        schoolkidDto.setClassNumber(this.getNumber());
         return schoolkidDto;
     }
 }

@@ -8,12 +8,12 @@ import lombok.Data;
 
 public class Student extends Person {
     String group;
-    Integer numberRecordBook;
+    Integer RecordBook;
 
-    public Student(Integer id, String surname, String name, Integer age, String group, Integer numberRecordBook) {
+    public Student(Integer id, String surname, String name, Integer age, String group, Integer RecordBook) {
         super(id, surname, name, age);
         this.group = group;
-        this.numberRecordBook = numberRecordBook;
+        this.RecordBook = RecordBook;
     }
 
     @Override
@@ -21,7 +21,7 @@ public class Student extends Person {
         StudentDto studentDto = new StudentDto();
         super.map(this, studentDto);
         studentDto.setGroup(this.getGroup());
-        studentDto.setNumberRecordBook(this.getNumberRecordBook());
+        studentDto.setNumberRecordBook(this.getRecordBook());
         return studentDto;
     }
 
