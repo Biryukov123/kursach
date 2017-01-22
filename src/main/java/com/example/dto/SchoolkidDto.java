@@ -7,15 +7,15 @@ import lombok.Data;
 
 public class SchoolkidDto extends PersonDto {
 
-    String classNumber;
+    String number;
 
     public PersonDto mapping(Schoolkid schoolkid) {
-        this.classNumber = schoolkid.getNumber();
+        this.number = schoolkid.getNumber();
         return this;
     }
 
     public String toString() {
-        return super.toString() + String.format("Класс %s    \n", classNumber);
+        return super.toString() + String.format("Класс %s    \n", number);
     }
 
 }

@@ -13,7 +13,7 @@ public class PersonRepository {
 
     PersonRepository() {
         personAdd(new Manager(1, "Gibkin", "Yuriy", 22, 24, 4653, 6434));
-        personAdd(new Schoolkid(2, "Katomin", "Alexander", 23, 214.59, "11Б"));
+        personAdd(new Schoolkid(2, "Katomin", "Alexander", 23, 214.59, "11"));
         personAdd(new Teacher(3, "Petrov", "Sidor", 24, 15, 125, 2155));
     }
 

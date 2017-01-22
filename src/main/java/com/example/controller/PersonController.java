@@ -14,26 +14,14 @@ public class PersonController {
     @Autowired
     PersonService service;
 
-    @GetMapping(value = "/id{1}")
-    public String read(@PathVariable Integer id) {
+    @GetMapping(value = "/id{id}")
+    public PersonDto read(@PathVariable Integer id) {
 
-        return service.get(id).toString();
-    }
-
-    @GetMapping(value = "/id{2}")
-    public String read2(@PathVariable Integer id) {
-
-        return service.get(id).toString();
-    }
-
-    @GetMapping(value = "/id{3}")
-    public String read3(@PathVariable Integer id) {
-
-        return service.get(id).toString();
+        return service.get(id);
     }
 
     @GetMapping
-    public String readALL( ) {
+    public String read( ) {
 
         String s="";
         for (PersonDto personDto : service.getAll()) {

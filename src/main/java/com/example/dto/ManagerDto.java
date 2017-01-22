@@ -6,9 +6,9 @@ import lombok.Data;
 @Data
 public class ManagerDto extends CooperatorDto {
 
-    Integer countSubordinates;
+    Integer countCooperator;
 
     public String toString() {
-        return super.toString() + String.format("Количество подчиненных %d    \n", countSubordinates);
+        return super.toString() + String.format("Количество сотрудников %d    \n", countCooperator);
     }
 }

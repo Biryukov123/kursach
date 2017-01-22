@@ -21,7 +21,7 @@ public class Teacher extends Cooperator {
     public PersonDto mapping() {
         TeacherDto teacherDto = new TeacherDto();
         super.map(this, teacherDto);
-        teacherDto.setCountHours(this.getHours());
+        teacherDto.setHours(this.getHours());
         return teacherDto;
     }
 }

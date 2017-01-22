@@ -10,7 +10,7 @@ public abstract class CooperatorDto extends PersonDto {
     Integer experience;
 
     public String toString() {
-        return super.toString() + String.format("Стаж %d    \n", experience);
+        return super.toString() + String.format("Работал лет %d    \n", experience);
     }
 
 

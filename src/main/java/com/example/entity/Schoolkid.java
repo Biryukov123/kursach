@@ -22,7 +22,7 @@ public class Schoolkid extends Person {
     public PersonDto mapping() {
         SchoolkidDto schoolkidDto = new SchoolkidDto();
         super.map(this, schoolkidDto);
-        schoolkidDto.setClassNumber(this.getNumber());
+        schoolkidDto.setNumber(this.getNumber());
         return schoolkidDto;
     }
 }

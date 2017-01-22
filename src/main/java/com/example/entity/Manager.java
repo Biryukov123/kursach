@@ -18,7 +18,7 @@ public class Manager extends Cooperator {
     public PersonDto mapping() {
         ManagerDto directorDto = new ManagerDto();
         super.map(this, directorDto);
-        directorDto.setCountSubordinates(this.getCountCooperator());
+        directorDto.setCountCooperator(this.getCountCooperator());
         return directorDto;
     }
 }

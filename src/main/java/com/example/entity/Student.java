@@ -21,7 +21,7 @@ public class Student extends Person {
         StudentDto studentDto = new StudentDto();
         super.map(this, studentDto);
         studentDto.setGroup(this.getGroup());
-        studentDto.setNumberRecordBook(this.getRecordBook());
+        studentDto.setRecordBook(this.getRecordBook());
         return studentDto;
     }
 

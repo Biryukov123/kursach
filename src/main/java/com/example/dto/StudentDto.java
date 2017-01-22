@@ -6,11 +6,11 @@ import lombok.Data;
 
 public class StudentDto extends PersonDto {
     String group;
-    Integer numberRecordBook;
+    Integer recordBook;
 
 
     public String toString() {
-        return super.toString() + String.format("Группа %s    Номер зачетки %d    \n", group, numberRecordBook);
+        return super.toString() + String.format("Группа %s    Номер зачетной книжки %d    \n", group, recordBook);
     }
 
 
